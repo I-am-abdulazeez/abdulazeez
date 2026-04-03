@@ -3,7 +3,7 @@
     <AppNav />
     <HeroSection />
     <AboutSection />
-    <ExperienceSection />
+    <!-- <ExperienceSection /> -->
     <ProjectsSection />
     <SkillsSection />
     <ContactSection />
