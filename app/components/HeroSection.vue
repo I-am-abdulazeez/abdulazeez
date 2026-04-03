@@ -101,12 +101,13 @@
 
 .hero__name {
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 10vw, 7rem);
+  font-size: clamp(2.6rem, 9vw, 7rem);
   font-weight: 400;
   line-height: 1.05;
   letter-spacing: -0.02em;
   color: var(--color-text-primary);
   margin-bottom: 1.5rem;
+  word-break: break-word;
 }
 
 .hero__role {
@@ -137,6 +138,7 @@
 
 .hero__actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 3rem;
 }
