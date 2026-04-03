@@ -63,7 +63,7 @@ const menuOpen = ref(false);
 
 const links = [
   { href: "#about", label: "about" },
-  { href: "#experience", label: "experience" },
+  // { href: "#experience", label: "experience" },
   { href: "#projects", label: "projects" },
   { href: "#skills", label: "skills" },
   { href: "#contact", label: "contact" },
