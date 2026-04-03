@@ -4,5 +4,7 @@
     <HeroSection />
     <AboutSection />
     <ExperienceSection />
+    <ProjectsSection />
+    <SkillsSection />
   </main>
 </template>
