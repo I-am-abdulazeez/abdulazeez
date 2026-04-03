@@ -6,5 +6,7 @@
     <ExperienceSection />
     <ProjectsSection />
     <SkillsSection />
+    <ContactSection />
+    <AppFooter />
   </main>
 </template>
