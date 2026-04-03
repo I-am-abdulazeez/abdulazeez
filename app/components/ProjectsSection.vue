@@ -56,7 +56,7 @@ const projects = [
     status: "Live · Open Source",
     statusType: "live",
     url: "https://stunk.dev",
-    stars: "166",
+    stars: "160+",
     tags: ["TypeScript", "Open Source", "MIT"],
     featured: true,
   },
@@ -73,7 +73,7 @@ const projects = [
   {
     name: "Leadway Health Platforms",
     description:
-      "Built 5 internal platforms — Sales, Rider, Pharmacy, AutoPayment — processing 6,000+ daily transactions across Leadway Health.",
+      "Built 5+ internal platforms — Sales, Rider, Pharmacy, AutoPayment, Pharmacy App. etc — processing 6,000+ daily transactions across Leadway Health.",
     status: "Live · Freelance",
     statusType: "live",
     url: "#",
