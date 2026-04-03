@@ -37,7 +37,7 @@ export default defineNuxtConfig({
 
         // Open Graph
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://abdulazeez.xyz' },
+        { property: 'og:url', content: 'https://abdulazeez-ol.vercel.app' },
         {
           property: 'og:title',
           content: "Olanrewaju Abdul'Azeez — Senior Frontend Engineer",
@@ -52,7 +52,7 @@ export default defineNuxtConfig({
 
         // Twitter / X
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:url', content: 'https://abdulazeez.xyz' },
+        { name: 'twitter:url', content: 'https://abdulazeez-ol.vercel.app' },
         {
           name: 'twitter:title',
           content: "Olanrewaju Abdul'Azeez — Senior Frontend Engineer",
@@ -68,7 +68,7 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#0a0a0a' },
       ],
       link: [
-        { rel: 'canonical', href: 'https://abdulazeez.xyz' },
+        { rel: 'canonical', href: 'https://abdulazeez-ol.vercel.app' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       ],
     },
