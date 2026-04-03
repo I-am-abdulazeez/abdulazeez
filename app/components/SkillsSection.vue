@@ -62,7 +62,14 @@ const skillGroups = [
   },
   {
     category: "UI Libraries",
-    items: ["HeroUI", "shadcn/ui", "Headless UI", "Beautiful UI"],
+    items: [
+      "HeroUI",
+      "shadcn/ui",
+      "Chakra UI",
+      "Vuetify",
+      "Quasar",
+      "Mantine UI",
+    ],
   },
   {
     category: "Backend & APIs",
