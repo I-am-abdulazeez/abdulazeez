@@ -56,7 +56,7 @@
 
 <style scoped>
 .hero {
-  min-height: 100vh;
+  min-height: clamp(600px, 100vh, 700px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,7 +101,7 @@
 
 .hero__name {
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 9vw, 7rem);
+  font-size: clamp(2rem, 6vw, 4rem);
   font-weight: 400;
   line-height: 1.05;
   letter-spacing: -0.02em;
