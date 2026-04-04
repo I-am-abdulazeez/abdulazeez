@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  ssr: true,
 
   modules: [
     '@nuxtjs/google-fonts',
@@ -47,7 +48,10 @@ export default defineNuxtConfig({
           content:
             "Senior Frontend Engineer with 7+ years building production-grade web and mobile apps across fintech, insurance, edtech, and enterprise. Creator of Stunk — open-source state management with 160+ GitHub stars.",
         },
-        { property: 'og:image', content: '/og-image.png' },
+        { property: 'og:image', content: 'https://abdulazeez-ol.vercel.app/og-image.png' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { property: 'og:image:type', content: 'image/png' },
         { property: 'og:locale', content: 'en_US' },
 
         // Twitter / X
@@ -62,7 +66,7 @@ export default defineNuxtConfig({
           content:
             "Senior Frontend Engineer with 7+ years building production-grade web and mobile apps. Creator of Stunk — open-source state management with 160+ GitHub stars.",
         },
-        { name: 'twitter:image', content: '/og-image.png' },
+        { name: 'twitter:image', content: 'https://abdulazeez-ol.vercel.app/og-image.png' },
 
         // Theme
         { name: 'theme-color', content: '#0a0a0a' },
