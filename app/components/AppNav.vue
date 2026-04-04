@@ -71,12 +71,15 @@ const links = [
 
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value;
-  document.body.style.overflow = menuOpen.value ? "hidden" : "";
-};
-
-const closeMenu = () => {
-  menuOpen.value = false;
-  document.body.style.overflow = "";
+  if (menuOpen.value) {
+    document.body.style.overflow = "hidden";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+  } else {
+    document.body.style.overflow = "";
+    document.body.style.position = "";
+    document.body.style.width = "";
+  }
 };
 
 onMounted(() => {
@@ -85,6 +88,18 @@ onMounted(() => {
   });
 });
 
+const closeMenu = () => {
+  menuOpen.value = false;
+  document.body.style.overflow = "";
+  document.body.style.position = "";
+  document.body.style.width = "";
+};
+
+onUnmounted(() => {
+  document.body.style.overflow = "";
+  document.body.style.position = "";
+  document.body.style.width = "";
+});
 onUnmounted(() => {
   document.body.style.overflow = "";
 });
