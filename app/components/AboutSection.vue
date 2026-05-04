@@ -38,7 +38,13 @@
         <div class="about__meta">
           <div class="about__card">
             <p class="about__card-label">currently at</p>
-            <p class="about__card-value">Teknohub Solutions</p>
+            <a
+              href="https://buzzable.app"
+              target="_blank"
+              class="about__card-value accent"
+            >
+              Buzzable ↗
+            </a>
           </div>
 
           <div class="about__card">
