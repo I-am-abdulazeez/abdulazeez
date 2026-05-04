@@ -40,6 +40,18 @@
 <script setup lang="ts">
 const jobs = [
   {
+    role: "Frontend Developer",
+    company: "Buzzable",
+    note: "present",
+    period: "2025 — Now",
+    points: [
+      "Building and maintaining the frontend for a community and events platform focused on connecting people and scaling meaningful communities.",
+      "Working in a fast-moving product-focused team in San Francisco, contributing to core platform features and user experience.",
+    ],
+    tags: ["React", "TypeScript", "Next"],
+    featured: false,
+  },
+  {
     role: "Software Engineer",
     company: "Teknohub Solutions Management Limited",
     note: "present",
