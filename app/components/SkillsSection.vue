@@ -58,7 +58,18 @@ const skillGroups = [
   },
   {
     category: "State Management",
-    items: ["Stunk", "TanStack Query", "Pinia"],
+    items: ["Stunk", "TanStack Query", "Redux", "Context API", "Pinia"],
+  },
+  {
+    category: "AI & Real-time",
+    items: [
+      "AI API Integration",
+      "LLM-powered UI",
+      "WebSockets",
+      "Stream Chat",
+      "Real-time Data",
+      "QR Code Generation",
+    ],
   },
   {
     category: "UI Libraries",
@@ -77,7 +88,7 @@ const skillGroups = [
   },
   {
     category: "Tooling & DevOps",
-    items: ["GitHub Actions", "Bitbucket Pipelines", "Git"],
+    items: ["GitHub Actions", "Bitbucket Pipelines", "Git", "Vite"],
   },
   {
     category: "Design",
