@@ -7,8 +7,8 @@
       </div>
 
       <h1 class="hero__name fade-in fade-in-delay-1">
-        Olanrewaju<br />
-        Abdul<span class="accent">'</span>Azeez
+        Abdul<span class="accent">'</span>Azeez <br />
+        Olanrewaju
       </h1>
 
       <p class="hero__role fade-in fade-in-delay-2">
@@ -23,7 +23,7 @@
         >
         — a community and events platform in San Francisco. Creator of
         <a href="https://stunk.dev" target="_blank" class="hero__link">Stunk</a>
-        — an open-source state management library with 160+ GitHub stars.
+        — an open-source state management library with 170+ GitHub stars.
       </p>
 
       <div class="hero__actions fade-in fade-in-delay-4">
