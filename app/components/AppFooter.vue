@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="footer__copy">© {{ year }} Olanrewaju Abdul'Azeez</p>
+      <p class="footer__copy">© {{ year }}Abdul'Azeez Olanrewaju</p>
       <p class="footer__built">
         built with <span class="accent">Nuxt</span> ·
         <a href="https://abdulazeez.xyz" class="accent">abdulazeez.xyz</a>
