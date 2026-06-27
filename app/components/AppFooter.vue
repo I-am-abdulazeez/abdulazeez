@@ -3,8 +3,8 @@
     <div class="container footer__inner">
       <p class="footer__copy">© {{ year }} Olanrewaju Abdul'Azeez</p>
       <p class="footer__built">
-        built with <span class="accent">Nuxt</span> · deployed on
-        <span class="accent">abdulazeez.xyz</span>
+        built with <span class="accent">Nuxt</span> ·
+        <a href="https://abdulazeez.xyz" class="accent">abdulazeez.xyz</a>
       </p>
     </div>
   </footer>
