@@ -38,7 +38,7 @@ export default defineNuxtConfig({
 
         // Open Graph
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://abdulazeez-ol.vercel.app' },
+        { property: 'og:url', content: 'https://abdulazeez.xyz' },
         {
           property: 'og:title',
           content: "Olanrewaju Abdul'Azeez — Senior Frontend Engineer",
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
           content:
             "Senior Frontend Engineer with 7+ years building production-grade web and mobile apps across fintech, insurance, edtech, and enterprise. Creator of Stunk — open-source state management with 170+ GitHub stars.",
         },
-        { property: 'og:image', content: 'https://abdulazeez-ol.vercel.app/og-image.png' },
+        { property: 'og:image', content: 'https://abdulazeez.xyz/og-image.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { property: 'og:image:type', content: 'image/png' },
@@ -56,7 +56,7 @@ export default defineNuxtConfig({
 
         // Twitter / X
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:url', content: 'https://abdulazeez-ol.vercel.app' },
+        { name: 'twitter:url', content: 'https://abdulazeez.xyz' },
         {
           name: 'twitter:title',
           content: "Olanrewaju Abdul'Azeez — Senior Frontend Engineer",
@@ -66,13 +66,13 @@ export default defineNuxtConfig({
           content:
             "Senior Frontend Engineer with 7+ years building production-grade web and mobile apps. Creator of Stunk — open-source state management with 170+ GitHub stars.",
         },
-        { name: 'twitter:image', content: 'https://abdulazeez-ol.vercel.app/og-image.png' },
+        { name: 'twitter:image', content: 'https://abdulazeez.xyz/og-image.png' },
 
         // Theme
         { name: 'theme-color', content: '#0a0a0a' },
       ],
       link: [
-        { rel: 'canonical', href: 'https://abdulazeez-ol.vercel.app' },
+        { rel: 'canonical', href: 'https://abdulazeez.xyz' },
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'shortcut icon', href: '/favicon.svg' },
         { rel: 'apple-touch-icon', href: '/favicon.svg' },
