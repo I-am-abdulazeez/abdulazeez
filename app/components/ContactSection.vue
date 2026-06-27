@@ -11,7 +11,7 @@
             <span class="accent">together.</span>
           </h2>
           <p class="contact__text">
-            I'm currently open to new opportunities — full-time roles, freelance
+            I'm currently open to new opportunities, full-time roles, freelance
             engagements, or just a good conversation about frontend engineering.
             My inbox is always open.
           </p>
