@@ -21,7 +21,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Olanrewaju Abdul'Azeez — Senior Frontend Engineer",
+      title: "Abdul'Azeez Olanrewaju  - Senior Frontend Engineer",
       htmlAttrs: {
         lang: 'en',
       },
@@ -33,7 +33,7 @@ export default defineNuxtConfig({
           content:
             "Senior Frontend Engineer with 7+ years building production-grade web and mobile apps across fintech, insurance, edtech, and enterprise. Creator of Stunk — open-source state management with 170+ GitHub stars.",
         },
-        { name: 'author', content: "Olanrewaju Abdul'Azeez" },
+        { name: 'author', content: "Abdul'Azeez Olanrewaju " },
         { name: 'robots', content: 'index, follow' },
 
         // Open Graph
@@ -41,7 +41,7 @@ export default defineNuxtConfig({
         { property: 'og:url', content: 'https://abdulazeez.xyz' },
         {
           property: 'og:title',
-          content: "Olanrewaju Abdul'Azeez — Senior Frontend Engineer",
+          content: "Abdul'Azeez Olanrewaju  - Senior Frontend Engineer",
         },
         {
           property: 'og:description',
