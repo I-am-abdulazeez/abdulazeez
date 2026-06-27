@@ -31,7 +31,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            "Senior Frontend Engineer with 7+ years building production-grade web and mobile apps across fintech, insurance, edtech, and enterprise. Creator of Stunk — open-source state management with 160+ GitHub stars.",
+            "Senior Frontend Engineer with 7+ years building production-grade web and mobile apps across fintech, insurance, edtech, and enterprise. Creator of Stunk — open-source state management with 170+ GitHub stars.",
         },
         { name: 'author', content: "Olanrewaju Abdul'Azeez" },
         { name: 'robots', content: 'index, follow' },
@@ -46,7 +46,7 @@ export default defineNuxtConfig({
         {
           property: 'og:description',
           content:
-            "Senior Frontend Engineer with 7+ years building production-grade web and mobile apps across fintech, insurance, edtech, and enterprise. Creator of Stunk — open-source state management with 160+ GitHub stars.",
+            "Senior Frontend Engineer with 7+ years building production-grade web and mobile apps across fintech, insurance, edtech, and enterprise. Creator of Stunk — open-source state management with 170+ GitHub stars.",
         },
         { property: 'og:image', content: 'https://abdulazeez-ol.vercel.app/og-image.png' },
         { property: 'og:image:width', content: '1200' },
@@ -64,7 +64,7 @@ export default defineNuxtConfig({
         {
           name: 'twitter:description',
           content:
-            "Senior Frontend Engineer with 7+ years building production-grade web and mobile apps. Creator of Stunk — open-source state management with 160+ GitHub stars.",
+            "Senior Frontend Engineer with 7+ years building production-grade web and mobile apps. Creator of Stunk — open-source state management with 170+ GitHub stars.",
         },
         { name: 'twitter:image', content: 'https://abdulazeez-ol.vercel.app/og-image.png' },
 
