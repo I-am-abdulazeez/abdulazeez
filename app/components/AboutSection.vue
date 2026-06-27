@@ -14,7 +14,7 @@
             I'm a Senior Frontend Engineer based in Lagos, Nigeria, with 7+
             years of experience crafting production-grade web and mobile
             applications. I've worked across fintech, insurance, edtech, and
-            enterprise — always focused on engineering depth and frontend
+            enterprise, always focused on engineering depth and frontend
             quality.
           </p>
 
@@ -24,7 +24,7 @@
               >Stunk</a
             >
             — a framework-agnostic state management library for JavaScript and
-            TypeScript, now with 160+ GitHub stars and used in production across
+            TypeScript, now with 170+ GitHub stars and used in production across
             multiple projects.
           </p>
 
