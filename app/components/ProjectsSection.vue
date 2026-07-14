@@ -63,8 +63,8 @@ const projects = [
   {
     name: "Buzzable",
     description:
-      "Currently building Buzzable v3 — an event and community platform that helps organizers create, grow, engage, and monetize their audiences. Features include real-time chat, AI-assisted event creation, QR code check-in, wallet flows, and brand sponsorship matching.",
-    status: "Currently Building · v3",
+      "Currently building Buzzable — an event and community platform that helps organizers create, grow, engage, and monetize their audiences. Features include real-time chat, AI-assisted event creation, QR code check-in, wallet flows, and brand sponsorship matching.",
+    status: "Currently Building",
     statusType: "wip",
     url: "https://buzzable.com",
     tags: ["React", "Vite", "TypeScript", "Stream Chat", "WebSockets"],
