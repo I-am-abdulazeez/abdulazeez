@@ -15,15 +15,14 @@
         <span class="accent">—</span> Senior Frontend Engineer
       </p>
 
-      <p class="hero__summary fade-in fade-in-delay-3" data-v-019bb273>
+      <p class="hero__summary fade-in fade-in-delay-3">
         7+ years building production-grade web and mobile apps across fintech,
         insurance, edtech, and enterprise. Currently at
         <a href="https://buzzable.app" target="_blank" class="hero__link"
           >Buzzable</a
-        >
-        — a community and events platform in San Francisco. Creator of
-        <a href="https://stunk.dev" target="_blank" class="hero__link">Stunk</a>
-        — an open-source state management library with 170+ GitHub stars.
+        >, a community and events platform in San Francisco. Creator of
+        <a href="https://stunk.dev" target="_blank" class="hero__link">Stunk</a
+        >, an open-source state management library with 173+ GitHub stars.
       </p>
 
       <div class="hero__actions fade-in fade-in-delay-4">

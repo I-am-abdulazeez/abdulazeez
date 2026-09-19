@@ -22,9 +22,8 @@
             Beyond client work, I created
             <a href="https://stunk.dev" target="_blank" class="about__link"
               >Stunk</a
-            >
-            — a framework-agnostic state management library for JavaScript and
-            TypeScript, now with 170+ GitHub stars and used in production across
+            >, a framework-agnostic state management library for JavaScript and
+            TypeScript, now with 173+ GitHub stars and used in production across
             multiple projects.
           </p>
 

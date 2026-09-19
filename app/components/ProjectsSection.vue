@@ -37,7 +37,21 @@
             </div>
 
             <div v-if="project.stars" class="project__stars">
-              <span class="star-icon">★</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="m13.73 3.51 1.76 3.52c.24.49.88.96 1.42 1.05l3.19.53c2.04.34 2.52 1.82 1.05 3.28l-2.48 2.48c-.42.42-.65 1.23-.52 1.81l.71 3.07c.56 2.43-.73 3.37-2.88 2.1l-2.99-1.77c-.54-.32-1.43-.32-1.98 0l-2.99 1.77c-2.14 1.27-3.44.32-2.88-2.1l.71-3.07c.13-.58-.1-1.39-.52-1.81l-2.48-2.48c-1.46-1.46-.99-2.94 1.05-3.28l3.19-.53c.53-.09 1.17-.56 1.41-1.05l1.76-3.52c.96-1.91 2.52-1.91 3.47 0Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
               {{ project.stars }}
             </div>
           </div>
@@ -53,17 +67,17 @@ const projects = [
     name: "Stunk",
     description:
       "Framework-agnostic state management library for JavaScript and TypeScript. Used in production across multiple client projects. 8 contributors, 488 weekly downloads.",
-    status: "Live · Open Source",
+    status: "Live, Open Source",
     statusType: "live",
     url: "https://stunk.dev",
-    stars: "170+",
+    stars: "173+",
     tags: ["TypeScript", "Open Source", "MIT"],
     featured: true,
   },
   {
     name: "Buzzable",
     description:
-      "Currently building Buzzable — an event and community platform that helps organizers create, grow, engage, and monetize their audiences. Features include real-time chat, AI-assisted event creation, QR code check-in, wallet flows, and brand sponsorship matching.",
+      "Currently building Buzzable, an event and community platform that helps organizers create, grow, engage, and monetize their audiences. Features include real-time chat, AI-assisted event creation, QR code check-in, wallet flows, and brand sponsorship matching.",
     status: "Currently Building",
     statusType: "wip",
     url: "https://buzzable.com",
@@ -73,9 +87,9 @@ const projects = [
   {
     name: "Nester Verify",
     description:
-      "Real-time KYC and identity verification platform. v2 is live and actively maintained in production. Currently building v3.",
-    status: "Currently Building · v3",
-    statusType: "wip",
+      "Real-time KYC and identity verification platform. Live in production and actively supported.",
+    status: "Live, Supported",
+    statusType: "live",
     url: "https://nesterverify.com/",
     tags: ["React", "TypeScript", "TanStack", "Stunk", "Tailwind", "Chakra UI"],
     featured: false,
@@ -83,8 +97,8 @@ const projects = [
   {
     name: "Leadway Health Platforms",
     description:
-      "Built 5+ internal platforms: Sales, Rider, Pharmacy, AutoPayment, Pharmacy App. etc, processing 6,000+ daily transactions across Leadway Health.",
-    status: "Live · Freelance",
+      "Built 5+ internal platforms: Sales, Rider, Pharmacy, AutoPayment, Pharmacy App, processing 6,000+ daily transactions across Leadway Health.",
+    status: "Live, Freelance",
     statusType: "live",
     url: "#",
     tags: ["React", "Stunk", "Tailwind", "HeroUI"],
@@ -96,7 +110,7 @@ const projects = [
       "Designed and shipped the full vendor portal in under 3 months. Serving 1,000+ vendors with separate admin and vendor dashboards.",
     status: "Live",
     statusType: "live",
-    url: "https://vendorportal.arm.com.ng/",
+    url: "#",
     tags: ["React", "TanStack Query", "Stunk", "Tailwind", "HeroUI"],
     featured: false,
   },
@@ -108,16 +122,6 @@ const projects = [
     statusType: "wip",
     url: "https://mastan-app.vercel.app/",
     tags: ["React", "TypeScript"],
-    featured: false,
-  },
-  {
-    name: "School Notification System",
-    description:
-      "Vue + Quasar app enabling school admins to send real-time notifications to students and staff.",
-    status: "Shipped",
-    statusType: "shipped",
-    url: "#",
-    tags: ["Vue", "Quasar", "TypeScript", "Mobile app", "Firebase"],
     featured: false,
   },
 ];
@@ -245,9 +249,19 @@ const projects = [
   white-space: nowrap;
 }
 
-.star-icon {
+.project__stars {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
+
+.project__stars svg {
   color: #f59e0b;
-  font-size: 0.65rem;
+  flex-shrink: 0;
 }
 
 @media (max-width: 640px) {
