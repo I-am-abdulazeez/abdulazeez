@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/google-fonts',
     '@vueuse/nuxt',
+    '@vercel/analytics'
   ],
 
   googleFonts: {
