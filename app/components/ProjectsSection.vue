@@ -106,11 +106,11 @@ const projects: Project[] = [
   },
   {
     description:
-      "Currently building Buzzable, an event and community platform that helps organizers create, grow, engage, and monetize their audiences. Features include real-time chat, AI-assisted event creation, QR code check-in, wallet flows, and brand sponsorship matching.",
+      "Frontend engineer on Buzzable, an event and community platform that helps organizers create, grow, engage, and monetize their audiences. I led the UI overhaul and ship features like real-time chat, AI-assisted event creation, QR code check-in, wallet flows, and brand sponsorship.",
     image: "/projects/buzzable.png",
     name: "Buzzable",
-    status: "Currently Building",
-    statusType: "wip",
+    status: "Live, Contract",
+    statusType: "live",
     tags: ["React", "Vite", "TypeScript", "Stream Chat", "WebSockets"],
     url: "https://buzzable.com",
   },
