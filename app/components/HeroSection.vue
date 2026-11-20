@@ -18,7 +18,7 @@
       <p class="hero__summary fade-in fade-in-delay-3">
         7+ years building production-grade web and mobile apps across fintech,
         insurance, edtech, and enterprise. Currently at
-        <a href="https://buzzable.app" target="_blank" class="hero__link"
+        <a href="https://buzzable.com" target="_blank" class="hero__link"
           >Buzzable</a
         >, a community and events platform in San Francisco. Creator of
         <a href="https://stunk.dev" target="_blank" class="hero__link">Stunk</a
