@@ -8,14 +8,30 @@
       </h2>
 
       <div class="projects__grid">
-        <a
+        <component
+          :is="project.url ? 'a' : 'div'"
           v-for="project in projects"
           :key="project.name"
           :href="project.url"
-          target="_blank"
+          :target="project.url ? '_blank' : undefined"
+          :rel="project.url ? 'noopener noreferrer' : undefined"
           class="project__card"
-          :class="{ 'project__card--featured': project.featured }"
+          :class="{
+            'project__card--featured': project.featured,
+            'project__card--static': !project.url,
+          }"
         >
+          <div v-if="project.image" class="project__media">
+            <img
+              :src="project.image"
+              :alt="`Screenshot of ${project.name}`"
+              class="project__image"
+              loading="lazy"
+              @error="hideImage"
+            />
+          </div>
+
+          <div class="project__body">
           <div class="project__top">
             <span
               class="project__status"
@@ -23,7 +39,7 @@
             >
               {{ project.status }}
             </span>
-            <span class="project__arrow">↗</span>
+            <span v-if="project.url" class="project__arrow" aria-hidden="true">↗</span>
           </div>
 
           <h3 class="project__name">{{ project.name }}</h3>
@@ -55,76 +71,111 @@
               {{ project.stars }}
             </div>
           </div>
-        </a>
+          </div>
+        </component>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-const projects = [
+type Project = {
+  description: string;
+  featured?: boolean;
+  image?: string;
+  name: string;
+  stars?: string;
+  status: string;
+  statusType: "live" | "wip";
+  tags: string[];
+  url?: string;
+};
+
+const projects: Project[] = [
   {
-    name: "Stunk",
     description:
       "Framework-agnostic state management library for JavaScript and TypeScript. Used in production across multiple client projects. 8 contributors, 488 weekly downloads.",
+    featured: true,
+    image: "/projects/stunk.png",
+    name: "Stunk",
+    stars: "173+",
     status: "Live, Open Source",
     statusType: "live",
-    url: "https://stunk.dev",
-    stars: "173+",
     tags: ["TypeScript", "Open Source", "MIT"],
-    featured: true,
+    url: "https://stunk.dev",
   },
   {
-    name: "Buzzable",
     description:
       "Currently building Buzzable, an event and community platform that helps organizers create, grow, engage, and monetize their audiences. Features include real-time chat, AI-assisted event creation, QR code check-in, wallet flows, and brand sponsorship matching.",
+    image: "/projects/buzzable.png",
+    name: "Buzzable",
     status: "Currently Building",
     statusType: "wip",
-    url: "https://buzzable.com",
     tags: ["React", "Vite", "TypeScript", "Stream Chat", "WebSockets"],
-    featured: false,
+    url: "https://buzzable.com",
   },
   {
-    name: "Nester Verify",
     description:
-      "Real-time KYC and identity verification platform. Live in production and actively supported.",
-    status: "Live, Supported",
-    statusType: "live",
-    url: "https://nesterverify.com/",
-    tags: ["React", "TypeScript", "TanStack", "Stunk", "Tailwind", "Chakra UI"],
-    featured: false,
-  },
-  {
-    name: "Leadway Health Platforms",
-    description:
-      "Built 5+ internal platforms: Sales, Rider, Pharmacy, AutoPayment, Pharmacy App, processing 6,000+ daily transactions across Leadway Health.",
-    status: "Live, Freelance",
-    statusType: "live",
-    url: "#",
-    tags: ["React", "Stunk", "Tailwind", "HeroUI"],
-    featured: false,
-  },
-  {
-    name: "ARM Investment Vendor Portal",
-    description:
-      "Designed and shipped the full vendor portal in under 3 months. Serving 1,000+ vendors with separate admin and vendor dashboards.",
+      "Social marketplace where shoppers discover and buy from brands with public trust signals. Brands build their reputation through endorsements and ratings, and close sales through in-app chat with photo sharing, referrals and private customer labels.",
+    image: "/projects/ibrid.png",
+    name: "iBrid",
     status: "Live",
     statusType: "live",
-    url: "#",
-    tags: ["React", "TanStack Query", "Stunk", "Tailwind", "HeroUI"],
-    featured: false,
+    tags: ["Marketplace", "Chat", "Referrals"],
+    url: "https://useibrid.com",
   },
   {
-    name: "Mastan",
+    description:
+      "Real-time KYC and identity verification platform. Live in production and actively supported.",
+    image: "/projects/nester-verify.png",
+    name: "Nester Verify",
+    status: "Live, Supported",
+    statusType: "live",
+    tags: ["React", "TypeScript", "TanStack", "Stunk", "Tailwind", "Chakra UI"],
+    url: "https://nesterverify.com/",
+  },
+  {
+    description:
+      "Website for an agribusiness with farms in Osun State and an office in Lagos. Presents produce and livestock, takes orders through WhatsApp, and showcases agricultural investment packages and training.",
+    image: "/projects/farms-mart.png",
+    name: "Olanrewaju Farms Mart",
+    status: "Live",
+    statusType: "live",
+    tags: ["Business Website", "WhatsApp Ordering"],
+    url: "https://olanrewaju-farms-mart.vercel.app/",
+  },
+  {
     description:
       "Full school management system covering student records, scheduling, and admin workflows. Currently in active development.",
+    image: "/projects/mastan.png",
+    name: "Mastan",
     status: "In Development",
     statusType: "wip",
-    url: "https://mastan-app.vercel.app/",
     tags: ["React", "TypeScript"],
-    featured: false,
+    url: "https://mastan-app.vercel.app/",
+  },
+  {
+    description:
+      "Built 5+ internal platforms: Sales, Rider, Pharmacy, AutoPayment, Pharmacy App, processing 6,000+ daily transactions across Leadway Health.",
+    name: "Leadway Health Platforms",
+    status: "Live, Freelance",
+    statusType: "live",
+    tags: ["React", "Stunk", "Tailwind", "HeroUI"],
+  },
+  {
+    description:
+      "Designed and shipped the full vendor portal in under 3 months. Serving 1,000+ vendors with separate admin and vendor dashboards.",
+    name: "ARM Investment Vendor Portal",
+    status: "Live",
+    statusType: "live",
+    tags: ["React", "TanStack Query", "Stunk", "Tailwind", "HeroUI"],
   },
 ];
+
+function hideImage(event: Event) {
+  const media = (event.target as HTMLElement).closest(".project__media");
+  if (media) (media as HTMLElement).style.display = "none";
+}
 </script>
 
 <style scoped>
@@ -139,8 +190,6 @@ const projects = [
 .project__card {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  padding: 2rem;
   background: var(--color-bg);
   transition: background var(--transition-base);
   cursor: pointer;
@@ -150,7 +199,46 @@ const projects = [
   background: var(--color-bg-card);
 }
 
-.project__card:hover .project__arrow {
+.project__card--static {
+  cursor: default;
+}
+
+.project__media {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform var(--transition-slow);
+}
+
+.project__card:hover .project__image {
+  transform: scale(1.03);
+}
+
+.project__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem 2rem 2rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project__image {
+    transition: none;
+  }
+}
+
+.project__card:hover .project__arrow,
+.project__card:focus-visible .project__arrow {
   opacity: 1;
   transform: translate(2px, -2px);
 }
